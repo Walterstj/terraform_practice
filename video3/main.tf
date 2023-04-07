@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "eu-west-3"
+  region = "us-east-1"
 }
 
 resource "aws_vpc" "main" {
@@ -63,7 +63,7 @@ resource "aws_route_table" "private" {
   }
 
   tags = {
-    Name = "private-rt"
+    Name = "private-route"
   }
 }
 
